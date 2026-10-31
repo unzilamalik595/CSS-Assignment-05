@@ -1,0 +1,633 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* //////////////// header start ////////////////*/
+
+header {
+
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: auto;
+    position: fixed;
+}
+
+header .logo,
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    /* padding:0px 20px ; */
+    margin: 30px;
+    /* margin: auto; */
+
+}
+
+header .logo {
+    justify-content: flex-start;
+    gap: 10px;
+
+}
+
+header .logo h1 {
+
+    font-size: 2.5em;
+    font-family: "Bangers", system-ui;
+    font-weight: 500;
+}
+
+header .logo img {
+    width: 70px;
+    height: 70px;
+}
+
+header .logo span {
+    color: #C3F400;
+
+}
+
+header .links {
+
+    justify-content: flex-end;
+
+}
+
+header .links a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    justify-content: flex-end;
+    padding: 0px 20px;
+}
+
+header .links a:hover {
+
+    color: #C3F400;
+}
+
+/* //////////////// header end ////////////////*/
+.section {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+
+}
+
+.section .page1 {
+
+    min-height: 100vh;
+    width: inherit;
+    background-image: linear-gradient(rgba(10, 10, 10, 0.897), rgba(6, 6, 6, 0.875)), url(./assets/images/home\ img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.section .page1 .content {
+    width: 60%;
+    justify-content: flex-start;
+    margin-left: 60px;
+}
+
+.section .page1 .content h1 {
+    font-family: "Bangers", system-ui;
+    font-weight: 300;
+/* margin-left: -30px; */
+    /* text-align: center; */
+    font-size: 5em;
+    color: white;
+    line-height: -40px;
+    word-spacing: 30px;
+}
+
+.section .page1 .content h2 {
+
+    color: #C3F400;
+    font-family: "Bangers", system-ui;
+    font-weight: 300;
+
+    /* text-align: center; */
+    font-size: 5em;
+    /* color: white; */
+    /* line-height: -30px; */
+    word-spacing: 15px;
+}
+
+.section .page1 .content p {
+
+    color: white;
+    width: 650px;
+    /* text-align: center; */
+    padding: 40px 0px;
+    line-height: 30px;
+    /* margin: -10px; */
+}
+
+
+.section .page1 .btn button {
+    background-color: transparent;
+    color: #C3F400;
+    width: 190px;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: #C3F400 solid 1px;
+}
+
+.section .page1 .btn .btn2 {
+    background-color: #c3f4009e;
+    color: white;
+    margin-left: 20px;
+}
+
+.section .page1 button:hover {
+    background-color: #c3f400b1;
+    color: white;
+}
+
+.section .page1 .btn2:hover {
+    box-shadow: 30px 3;
+}
+
+.section .page1 .image {
+
+    width: 39%;
+    /* flex-wrap: wrap; */
+    /* background-color: aqua; */
+    /* position: fixed; */
+    /* display: flex;
+  flex-direction: column; */
+}
+
+.section .page1 img {
+    position: fixed;
+    width: 400px;
+
+    height: 400px;
+    margin-top: -190px;
+
+}
+
+.section .page1 .image {
+
+    animation: move 2s ease-in-out infinite;
+
+}
+
+.contentHead {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.contentHead h1 {
+    font-size: 3em;
+    padding: 70px;
+    font-family: "Bangers", system-ui;
+    font-weight: 300px;
+    word-spacing: 20px;
+    letter-spacing: 8px;
+}
+
+.contentHead h1 span {
+    color: #C3F400;
+}
+
+.contentHead p {
+    width: 1200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    line-height: 25px;
+}
+
+.section .page2 {
+    min-height: 80vh;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.section .page2 .image {
+
+    width: 50%;
+
+    display: flex;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.section .page2 .content {
+    width: 50%;
+}
+
+.section .page2 img {
+    width: 600px;
+    height: 400px;
+    border-radius: 30px;
+    animation: move 2s ease-in-out infinite;
+}
+
+.section .page2 .content h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+.section .page2 .content p {
+    line-height: 20px;
+    width: 700px;
+}
+
+.section .page3 {
+    min-height: 80vh;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.section .page3 .image {
+
+    width: 50%;
+
+    display: flex;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.section .page3 .content {
+    width: 50%;
+    margin-left: 30px;
+    margin-top: -90px;
+}
+
+.section .page3 img {
+    width: 600px;
+    height: 400px;
+    border-radius: 30px;
+    animation: move 2s ease-in-out infinite;
+}
+
+.section .page3 .content h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    margin-top: -10px;
+    font-family: "Bangers", system-ui;
+    letter-spacing: 8px;
+}
+
+.section .page3 .content h1 span{
+    color: #C3F400;
+}
+
+.section .page3 .content p {
+    line-height: 25px;
+    width: 600px;
+    padding-top: 30px;
+}
+
+.section .page3 .btn button {
+    background-color: transparent;
+    color: #C3F400;
+    width: 190px;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: #C3F400 solid 2px;
+}
+
+.section .page3 .btn .btn2 {
+    background-color: #C3F400;
+    color: white;
+    margin-left: 20px;
+}
+
+.section .page3 button:hover {
+    background-color: #C3F400;
+    color: white;
+}
+
+.section .page3 .btn2:hover {
+    box-shadow: 30px 3;
+}
+
+.section .page4 {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    min-height: 60vh;
+
+    background-image: url(./assets/images/backgroung\ orange.jpg);
+}
+
+.section .page4 .numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 230px;
+
+}
+
+
+
+.section .page4 .numbers p,
+h2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.section .page4 .numbers h2 {
+
+    font-size: 5em;
+    font-family: "Bangers", system-ui;
+    letter-spacing: 3px;
+}
+
+.section .page4 .numbers p {
+    color: white;
+    font-width: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.section .page5 {
+    background-color: black;
+}
+
+.page5 .contentHead {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.page5 .contentHead h1 {
+    font-size: 3em;
+    padding: 70px;
+    font-family: "Bangers", system-ui;
+    font-weight: 300px;
+    word-spacing: 20px;
+    letter-spacing: 8px;
+    color: white;
+}
+
+.section .page5 .content h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+    margin-top: 20px;
+    color: white;
+}
+
+.section .page5 .content p {
+    line-height: 20px;
+    width: 700px;
+    color: rgba(255, 255, 255, 0.552);
+
+}
+
+.section .page5 .btn button {
+    background-color: transparent;
+    color: #C3F400;
+    width: 190px;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: #C3F400 solid 1px;
+}
+
+.section .page5 .btn .btn2 {
+    background-color: #C3F400;
+    color: white;
+    margin-left: 20px;
+}
+
+.section .page5 button:hover {
+    background-color: #C3F400;
+    color: white;
+}
+
+.section .page5 .btn2:hover {
+    box-shadow: 30px 3;
+}
+
+.section .page5 .numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 230px;
+
+}
+
+.section .page6 {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    min-height: 60vh;
+    padding: 50px;
+    color: white;
+    background-image: url(./assets/images/backgroung\ orange.jpg);
+}
+
+.section .page6 .content{
+text-align: center;
+}
+/* .section .page6 h3 {
+    font-size: 1.5em;
+    padding: 20px;
+} */
+
+.section .page6 .content h1 {
+    font-size: 3em;
+    padding: 10px;
+    font-family: "Bangers", system-ui;
+    font-weight: 300;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+
+
+}
+
+.section .page6 .content p {
+    font-size: 1em;
+    padding: 10px;
+    /* font-family: "Bangers", system-ui; */
+    font-weight: 300;
+    word-spacing: 3px;
+    width: 900px;
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+.section .page6 .btn{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.section .page6 .btn .btn2 {
+    background-color: transparent;
+    color: #C3F400;
+    width: 190px;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: #C3F400 solid 1px;
+}
+
+.section .page6 .btn .btn2 {
+    background-color: #C3F400;
+    color: white;
+    margin-left: 20px;
+}
+
+.section .page6 button:hover {
+    background-color: #C3F400;
+    color: white;
+}
+
+.section .page6 .btn2:hover {
+    box-shadow: 30px 3;
+}
+.section .page7{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 5em 2em;
+}
+.section .page7 .octagonwrap {
+    width: 200px;
+    height: 200px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    /* margin: 20px; */
+}
+.section .page7  .octagon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    transform: rotate(45deg);
+    background: #ffffff;
+    border: 5px solid black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    /* transition: 2s ease-in-out; */
+       transition: transform 0.5s ;
+}
+.section .page7 .gallery-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* transform: rotate(-45deg); */
+}
+.section .page7 .octagon:hover{
+   overflow:visible;
+      transform: translateY(-20px);
+   /* transition: transform 0.5s ease-in-out; */
+       /* transform: rotate(none); */
+
+}
+.section .page8{
+  min-height: 100vh;
+    width: inherit;
+    background-image:   url(./assets/images/contact1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+.section .page8 .contect-us{
+display: flex;
+
+background-color: #C3F400;
+}
+.section .page8 .contect-us .message{
+
+    background-color: white;
+    min-height: 490px;
+    width: 400px;
+}
+.section .page8 .contect-us .contact{
+
+    background-color:black;
+   min-height: 490px;
+    width: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes move {
+
+    0% {
+        transform: translateY(0);
+    }
+
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+
+}
