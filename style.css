@@ -40,6 +40,9 @@ header .logo {
 
 }
 
+.navbar-toggler{
+    display: none;
+}
 header .logo h1 {
 
     font-size: 2.5em;
@@ -60,7 +63,7 @@ header .logo span {
 header .links {
 
     justify-content: flex-end;
-
+/* width: 100px; */
 }
 
 header .links a {
@@ -69,6 +72,7 @@ header .links a {
     font-size: 19px;
     justify-content: flex-end;
     padding: 0px 20px;
+
 }
 
 header .links a:hover {
@@ -76,20 +80,82 @@ header .links a:hover {
     color: #C3F400;
 }
 
+
+
+/* HEADER RESPONSIVE */
+
+.menu {
+    position: relative;
+}
+
+@media(max-width:830px) {
+
+    .navbar-toggler {
+        display: block;
+        background-color: transparent;
+        color: #C3F400;
+        border: 1px solid #C3F400;
+        padding: 8px 12px;
+        font-size: 22px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    header .links {
+        display: none;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        width: 180px;
+        background-color: black;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .menu:hover .links {
+        display: block;
+    }
+
+    header .links nav a {
+        display: block;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+    }
+
+    header .links nav a:hover {
+        color: #C3F400;
+    }
+}
+
+@media(max-width:480px) {
+
+    .navbar-toggler {
+        font-size: 19px;
+        padding: 6px 10px;
+    }
+
+    header .links {
+        width: 160px;
+    }
+}
+
 /* //////////////// header end ////////////////*/
 
+/* ---------------------------------page1-start-------------------------------------------------------- */
 
 .section {
-    width: 100%;
-    height: 100vh;
+    max-width: 100%;
+    height: 100%;
     /* flex-direction: column; */
 /* display: flex; */
 }
 
+
 .section .page1 {
 
     min-height: 100vh;
-    width: inherit;
+    width: 100%;
     background-image: linear-gradient(rgba(10, 10, 10, 0.897), rgba(6, 6, 6, 0.875)), url(./assets/images/home\ img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -228,6 +294,167 @@ align-items: center;
     line-height: 25px;
 }
 
+
+/* -------------------------- PAGE 1  RESPONSIVE --------------------- */
+@media (max-width: 1255px) {
+.section .page1 .content {
+        width: 60%;
+        margin-left: 0px;
+        margin-top: 80px;
+    }
+ .section .page1 .image {
+        width: 30%;
+        min-height: auto;
+    }
+.section .page1 img {
+        width:300px ;
+        height: auto;
+    }
+}
+@media (max-width: 1024px) {
+
+    .section .page1 .content {
+        width: 60%;
+        margin-left: 10px;
+        margin-top: 80px;
+    }
+
+    .section .page1 .content h1 {
+        font-size: 3.5em;
+        word-spacing: 10px;
+    }
+
+    .section .page1 .content span {
+        font-size: 3.5em;
+        word-spacing: 5px;
+    }
+
+    .section .page1 .content p {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .section .page1 .image {
+        width: 50%;
+        min-height: auto;
+    }
+
+    .section .page1 img {
+        /* width: 100%; */
+        height: auto;
+    }
+
+}
+
+
+@media (max-width: 830px) {
+
+    .section .page1 {
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 110px 20px 40px;
+        background-attachment: scroll;
+        text-align: center;
+    }
+
+    .section .page1 .content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .section .page1 .content h1 {
+        font-size: 3em;
+        word-spacing: 5px;
+    }
+
+    .section .page1 .content span {
+        font-size: 3em;
+        word-spacing: 5px;
+    }
+
+    .section .page1 .content p {
+        width: 100%;
+        padding: 20px 0;
+        line-height: 26px;
+    }
+
+    .section .page1 .btn {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .section .page1 .btn button {
+        width: 160px;
+        height: 50px;
+        margin: 10px 0;
+    }
+
+    .section .page1 .btn .btn2 {
+        margin-left: 0;
+    }
+
+    .section .page1 .image {
+        width: 100%;
+        min-height: auto;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .section .page1 img {
+        width: 80%;
+        max-width: 350px;
+        height: auto;
+                margin-top: 30px;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .section .page1 {
+        padding: 100px 15px 30px;
+    }
+
+    .section .page1 .content h1 {
+        font-size: 2.3em;
+        word-spacing: 2px;
+    }
+
+    .section .page1 .content span {
+        font-size: 2.3em;
+        word-spacing: 2px;
+    }
+
+    .section .page1 .content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .section .page1 .btn button {
+        width: 135px;
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .section .page1 .image {
+        margin-top: 20px;
+    }
+
+    .section .page1 img {
+        width: 95%;
+        max-width: 300px;
+        height: auto;
+    }
+
+}
+
+
+/* ---------------------------------page2-start-------------------------------------------------------- */
+
 .section .page2 {
     min-height: 80vh;
     width: inherit;
@@ -266,12 +493,116 @@ align-items: center;
 
 .section .page2 .content p {
     line-height: 20px;
-    width: 700px;
+    width: 500px;
 }
+
+
+/* ============== PAGE 2 TABLET RESPONSIVE ============== */
+
+@media (max-width: 1024px) {
+
+    .section .page2 {
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .section .page2 .image {
+        width: 50%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .section .page2 .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .section .page2 .content {
+        width: 50%;
+        padding: 15px;
+    }
+
+    .section .page2 .content p {
+        width: 100%;
+        line-height: 25px;
+    }
+
+}
+
+/* ============== PAGE 2 MOBILE RESPONSIVE ============== */
+
+@media (max-width: 830px) {
+
+    .section .page2 {
+        flex-direction: column;
+        width: 100%;
+        padding: 40px 20px;
+        gap: 25px;
+    }
+
+    .section .page2 .image {
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .section .page2 .image img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .section .page2 .content {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .section .page2 .content h3 {
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+
+    .section .page2 .content p {
+        width: 100%;
+        line-height: 25px;
+        padding-top: 10px;
+    }
+
+}
+
+/* ============== PAGE 2 SMALL MOBILE ============== */
+
+@media (max-width: 480px) {
+
+    .section .page2 {
+        padding: 30px 15px;
+        gap: 20px;
+    }
+
+    .section .page2 .image img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .section .page2 .content h3 {
+        font-size: 1.1em;
+    }
+
+    .section .page2 .content p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+}
+
+/* ---------------------------------page3-start-------------------------------------------------------- */
+
 
 .section .page3 {
     min-height: 80vh;
-    width: inherit;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,7 +626,7 @@ align-items: center;
 }
 
 .section .page3 img {
-    width: 600px;
+    width: 550px;
     height: 400px;
     border-radius: 30px;
     animation: move 2s ease-in-out infinite;
@@ -344,6 +675,141 @@ align-items: center;
     box-shadow: 30px 3;
 }
 
+/* ============== PAGE 3 TABLET RESPONSIVE ============== */
+
+@media (max-width: 1024px) {
+
+    .section .page3 {
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    .section .page3 .image {
+        width: 50%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .section .page3 .image img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .section .page3 .content {
+        width: 50%;
+        margin-left: 10px;
+        margin-top: 0;
+    }
+
+    .section .page3 .content h1 {
+        font-size: 2.5em;
+        letter-spacing: 4px;
+    }
+
+    .section .page3 .content p {
+        width: 100%;
+        line-height: 25px;
+    }
+
+}
+
+/* ============== PAGE 3 MOBILE RESPONSIVE ============== */
+
+@media (max-width: 830px) {
+
+    .section .page3 {
+        flex-direction: column;
+        width: 100%;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .section .page3 .content {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .section .page3 .content h1 {
+        font-size: 2.5em;
+        letter-spacing: 4px;
+        margin-top: 0;
+    }
+
+    .section .page3 .content p {
+        width: 100%;
+        padding-top: 20px;
+        line-height: 25px;
+    }
+
+    .section .page3 .btn {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .section .page3 .btn button {
+        margin: 10px 0;
+    }
+
+    .section .page3 .btn .btn2 {
+        margin-left: 0;
+    }
+
+    .section .page3 .image {
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .section .page3 .image img {
+        width: 100%;
+        max-width: 500px;
+        height: 400px;
+        margin-top: 20px;
+    }
+
+}
+
+/* ============== PAGE 3 SMALL MOBILE ============== */
+
+@media (max-width: 480px) {
+
+    .section .page3 {
+        padding: 30px 15px;
+        gap: 20px;
+    }
+
+    .section .page3 .content h1 {
+        font-size: 2em;
+        letter-spacing: 2px;
+    }
+
+    .section .page3 .content p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .section .page3 .btn button {
+        width: 140px;
+        height: 48px;
+        font-size: 12px;
+    }
+
+    .section .page3 .image img {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        margin-top: 30px;
+    }
+
+}
+
+
+/* ---------------------------------page4-start-------------------------------------------------------- */
+
+
 .section .page4 {
     width: 100%;
     background-repeat: no-repeat;
@@ -366,9 +832,12 @@ align-items: center;
     align-items: center;
     color: white;
     gap: 230px;
+    text-align: center;
 
 }
-
+.section .page4 .numbers i{
+font-size: 3em;
+}
 
 
 .section .page4 .numbers p,
@@ -393,8 +862,68 @@ h2 {
     letter-spacing: 4px;
 }
 
+
+@media(max-width:1183px){
+    .section .page4 .numbers {
+   padding: 90px 0px;
+
+}
+}
+/* ------------------------------------ */
+@media (max-width: 1285px) {
+
+    
+    .section .contentHead .p {
+        width: 1000px;
+    }
+
+
+}
+
+
+@media (max-width: 1024px) {
+
+    
+    .section .contentHead .p {
+        width: 800px;
+        padding: 0px;
+    }
+
+
+}
+@media (max-width: 830px) {
+
+   
+
+    .section .contentHead .p {
+        width: 500px;
+        padding: 0px;
+
+    }
+    
+
+}
+@media (max-width: 530px) {
+
+   
+
+    .section .contentHead .p {
+        width: 300px;
+        padding: 0px;
+
+    }
+
+    
+
+}
+
+
+/* ---------------------------------page5-start-------------------------------------------------------- */
+
+
 .section .page5 {
     background-color: black;
+    width: 100%;
 }
 
 .page5 .contentHead {
@@ -423,7 +952,7 @@ h2 {
 
 .section .page5 .content p {
     line-height: 20px;
-    width: 700px;
+    width: 500px;
     color: rgba(255, 255, 255, 0.552);
 
 }
@@ -462,6 +991,132 @@ h2 {
     gap: 230px;
 
 }
+
+/* ============== PAGE 5 TABLET RESPONSIVE ============== */
+
+@media (max-width: 1024px) {
+
+    .section .page5 {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .page5 .contentHead h1 {
+        font-size: 2.7em;
+        padding: 50px 20px;
+        letter-spacing: 5px;
+    }
+
+    .section .page5 .content p {
+        width: 90%;
+        margin: auto;
+    }
+
+    .section .page5 .numbers {
+        gap: 70px;
+        justify-content: space-around;
+    }
+
+}
+
+/* ============== PAGE 5 MOBILE RESPONSIVE ============== */
+
+@media (max-width: 830px) {
+
+    .section .page5 {
+        padding-bottom: 40px;
+    }
+
+    .page5 .contentHead h1 {
+        font-size: 2.3em;
+        padding: 40px 15px;
+        word-spacing: 8px;
+        letter-spacing: 3px;
+    }
+
+    .section .page5 .content {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .section .page5 .content h3 {
+        font-size: 1.2em;
+        margin-top: 15px;
+    }
+
+    .section .page5 .content p {
+        width: 100%;
+        line-height: 25px;
+    }
+
+    .section .page5 .btn {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .section .page5 .btn button {
+        width: 160px;
+        height: 50px;
+        margin: 10px 0;
+    }
+
+    .section .page5 .btn .btn2 {
+        margin-left: 0;
+    }
+
+    .section .page5 .numbers {
+        gap: 40px;
+        justify-content: center;
+    }
+
+}
+
+/* ============== PAGE 5 SMALL MOBILE ============== */
+
+@media (max-width: 480px) {
+
+    .section .page5 {
+        padding-bottom: 30px;
+    }
+
+    .page5 .contentHead h1 {
+        font-size: 1.9em;
+        padding: 30px 10px;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+    }
+
+    .section .page5 .content {
+        padding: 10px 15px;
+    }
+
+    .section .page5 .content h3 {
+        font-size: 1.1em;
+    }
+
+    .section .page5 .content p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .section .page5 .btn button {
+        width: 135px;
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .section .page5 .numbers {
+        gap: 25px;
+    }
+
+}
+
+
+/* ---------------------------------page6-start-------------------------------------------------------- */
+
 
 .section .page6 {
     width: 100%;
@@ -538,8 +1193,106 @@ text-align: center;
 .section .page6 .btn2:hover {
     box-shadow: 30px 3;
 }
-.section .page7{
 
+/* ============== PAGE 6 TABLET RESPONSIVE ============== */
+
+@media (max-width: 1024px) {
+
+    .section .page6 {
+        min-height: auto;
+        padding: 60px 30px;
+        background-attachment: scroll;
+    }
+
+    .section .page6 .content h1 {
+        font-size: 2.7em;
+    }
+
+    .section .page6 .content p {
+        width: 90%;
+        line-height: 25px;
+    }
+
+}
+
+/* ============== PAGE 6 MOBILE RESPONSIVE ============== */
+
+@media (max-width: 830px) {
+
+    .section .page6 {
+        width: 100%;
+        min-height: auto;
+        padding: 50px 20px;
+        background-attachment: scroll;
+    }
+
+    .section .page6 .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section .page6 .content h1 {
+        font-size: 2.3em;
+        padding: 15px 5px;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+    }
+
+    .section .page6 .content p {
+        width: 100%;
+        font-size: 15px;
+        line-height: 25px;
+        padding: 10px 5px;
+    }
+
+    .section .page6 .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section .page6 .btn .btn2 {
+        width: 170px;
+        height: 50px;
+        margin: 20px 0 0;
+    }
+
+}
+
+/* ============== PAGE 6 SMALL MOBILE ============== */
+
+@media (max-width: 480px) {
+
+    .section .page6 {
+        padding: 40px 15px;
+    }
+
+    .section .page6 .content h1 {
+        font-size: 1.8em;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+        padding: 10px 0;
+    }
+
+    .section .page6 .content p {
+        font-size: 14px;
+        line-height: 23px;
+        padding: 10px 0;
+    }
+
+    .section .page6 .btn .btn2 {
+        width: 145px;
+        height: 45px;
+        font-size: 13px;
+    }
+
+}
+
+/* ---------------------------------page7-start-------------------------------------------------------- */
+
+
+.section .page7{
+width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -582,9 +1335,15 @@ text-align: center;
        /* transform: rotate(none); */
 
 }
+
+
+
+/* ---------------------------------page8-start-------------------------------------------------------- */
+
+
 .section .page8{
   min-height: 100vh;
-    width: inherit;
+    width: 100%;
     background-image:   url(./assets/images/contact1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -633,12 +1392,12 @@ outline: none;
 .section .page8 .contact-us .contact{
 
     background-color:white;
-   height: 500px;
-    width: 400px;
+    height: 500px;
     color: black;
-            /* margin: 40px 0px; */
-padding: 40px ;
-padding-top: 60px;
+    /* margin: 40px 0px; */
+    padding: 40px;
+    padding-top: 60px;
+width: 400px;
 
 }
 .section .page8 .btn button {
@@ -672,20 +1431,179 @@ padding-top: 60px;
     color: #000;
 }
 
+/* ============== PAGE 8 TABLET RESPONSIVE ============== */
+
+@media (max-width: 1024px) {
+
+    .section .page8 {
+        padding: 50px 20px;
+        background-attachment: scroll;
+    }
+
+    .section .page8 .contact-us {
+        width: 100%;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+  .contact-us .page8 .message,
+    .contact-us .page8 .contact {
+        width: 45%;
+        height: 500px;
+    }
+
+    .contact-us .page8 .message {
+        padding: 40px 25px;
+    }
+
+    .contact-us .page8 .contact {
+        padding: 40px 25px;
+    }
+
+     .page8 .contact-us .message input,
+    .page8 .contact-us .message textarea {
+        width: 100%;
+    }
+
+  .page8 .btn button {
+        margin-left: 0;
+    }
+
+}
+
+/* ============== PAGE 8 MOBILE RESPONSIVE ============== */
+
+@media (max-width: 830px) {
+
+    .section .page8 {
+        min-height: auto;
+        padding: 50px 20px;
+        /* background-attachment: scroll; */
+    }
+
+    .section .page8 .contact-us {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 0;
+    }
+
+    .contact-us .page8 .message {
+        width: 100%;
+        width: 450px;
+        height: auto;
+        padding: 40px 30px;
+    }
+
+    .contact-us .page8 .contact {
+        width: 100%;
+        width: 450px;
+        height: auto;
+        padding: 40px 30px;
+    }
+
+    .page8 .contact-us .message input,
+     .page8 .contact-us .message textarea {
+        width: 100%;
+        margin: 25px 0;
+    }
+
+    .page8 .contact-us .message h2 {
+        font-size: 1.5em;
+    }
+
+ .page8 .contact-us .contact h2 {
+        font-size: 1.5em;
+    }
+
+   .page8 .contact-us .contact p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .contact-us .page8 .btn {
+        text-align: center;
+    }
+
+    .contact-us .page8 .btn button {
+        width: 170px;
+        height: 50px;
+        margin: 10px 0;
+    }
+
+}
+
+/* ============== PAGE 8 SMALL MOBILE ============== */
+
+@media (max-width: 480px) {
+
+    .section .page8 {
+        padding: 30px 15px;
+        width: 100%;
+        background-image: none;
+    }
+   .section .page8 .contact-us{
+        width: 100%;
+    } 
+    .page8 .contact-us  .message {
+        padding: 20px 20px;
+        width: 300px ;
+
+    }
+
+     .page8 .contact-us  .contact {
+       border: #00000095 1px solid;
+       margin-top: 20px;
+       border-radius: 5px;
+       width: 300px !important;
+    
+    }
+
+    .page8 .contact-us .message h2,
+     .page8 .contact-us .contact h2 {
+        font-size: 1.3em;
+
+    }
+
+     .page8 .contact-us .message input,
+     .page8 .contact-us .message textarea {
+        max-width: 100%;
+        font-size: 13px;
+        padding: 9px 5px;
+    }
+
+    .page8 .contact-us .contact p {
+        font-size: 13px;
+        padding: 12px 0;
+        line-height: 22px;
+        overflow-wrap: anywhere;
+    }
+
+     .page8 .btn button {
+        max-width: 150px;
+        height: 45px;
+        font-size: 13px;
+    }
+
+}
+
+/* ------------------------------------FOOTER---------------------------------- */
 
     .footer .box-container {
     /* display: grid; */
     display: flex;
     /* grid-template-columns: repeat(auto-fit, minmax(16em, 1fr)); */
     justify-content: space-evenly;
-    width: 100%;
+    /* width: 100%; */
     /* background: rgba(0, 0, 0, 0.887); */
     background: black;
     padding: 1em 2em;
+    width: 100%;
 }
 
-/* --------------------------FOOTER---------------------------------- */
 .footer {
+    width: 100%;
     display: block;
     flex-wrap: wrap;
 }
@@ -722,6 +1640,7 @@ text-decoration: none;
     /* display: block; */
 }
 .section .credit {
+    width: 100%;
     padding: 1rem;
     padding-top: 2rem;
     margin-top: 2rem;
@@ -733,6 +1652,96 @@ text-decoration: none;
 }
 .section .credit span {
     color:#C3F400;
+}
+
+/* ============== FOOTER TABLET RESPONSIVE ============== */
+
+@media (max-width: 1024px) {
+
+    .footer .box-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 30px;
+        padding: 40px 30px;
+    }
+
+    .footer .box-container .box {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/* ============== FOOTER MOBILE RESPONSIVE ============== */
+
+@media (max-width: 830px) {
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer .box-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 35px 20px;
+    }
+
+    .footer .box-container .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer .box-container .box h3 {
+        font-size: 1.5em;
+        padding: 10px 0;
+    }
+
+    .footer .box-container .box a {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+}
+
+/* ============== FOOTER SMALL MOBILE ============== */
+
+@media (max-width: 480px) {
+
+    .footer .box-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .footer .box-container .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer .box-container .box h3 {
+        font-size: 1.4em;
+        padding: 10px 0;
+    }
+
+    .footer .box-container .box a {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    .footer .box-container .box a i {
+        padding-right: 5px;
+    }
+
+    .section .credit {
+        width: 100%;
+        font-size: 13px;
+        padding: 15px 10px;
+        margin-top: 0;
+    }
+
 }
 
 
