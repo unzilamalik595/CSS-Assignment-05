@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* //////////////// header start ////////////////*/
@@ -16,7 +17,9 @@ header {
     align-items: center;
     color: white;
     margin: auto;
+    /* position: relative; */
     position: fixed;
+     z-index: 9999;
 }
 
 header .logo,
@@ -74,11 +77,13 @@ header .links a:hover {
 }
 
 /* //////////////// header end ////////////////*/
+
+
 .section {
     width: 100%;
     height: 100vh;
-    flex-direction: column;
-
+    /* flex-direction: column; */
+/* display: flex; */
 }
 
 .section .page1 {
@@ -94,13 +99,15 @@ header .links a:hover {
     justify-content: center;
     align-items: center;
     margin: auto;
-
 }
 
 .section .page1 .content {
-    width: 60%;
+    width: 65%;
+    height: 100%;
     justify-content: flex-start;
     margin-left: 60px;
+        margin-top: 80px;
+
 }
 
 .section .page1 .content h1 {
@@ -114,7 +121,7 @@ header .links a:hover {
     word-spacing: 30px;
 }
 
-.section .page1 .content h2 {
+.section .page1 .content span {
 
     color: #C3F400;
     font-family: "Bangers", system-ui;
@@ -125,6 +132,7 @@ header .links a:hover {
     /* color: white; */
     /* line-height: -30px; */
     word-spacing: 15px;
+    /* margin-left: -300px; */
 }
 
 .section .page1 .content p {
@@ -165,28 +173,30 @@ header .links a:hover {
 
 .section .page1 .image {
 
-    width: 39%;
+    width: 35%;
+    min-height:518px ;
     /* flex-wrap: wrap; */
     /* background-color: aqua; */
     /* position: fixed; */
     /* display: flex;
   flex-direction: column; */
+      /* position: fixed; */
+display: flex;
+align-items: center;
+    animation: move 2s ease-in-out infinite;
 }
 
-.section .page1 img {
-    position: fixed;
-    width: 400px;
-
+.section .page1 img{
     height: 400px;
-    margin-top: -190px;
-
+    width:400px ;
+    /* margin-top: -190px; */
 }
 
-.section .page1 .image {
+/* .section .page1 .image {
 
     animation: move 2s ease-in-out infinite;
 
-}
+} */
 
 .contentHead {
     justify-content: center;
@@ -585,23 +595,144 @@ text-align: center;
     align-items: center;
     margin: auto;
 
-}
-.section .page8 .contect-us{
+} 
+.section .page8 .contact-us{
 display: flex;
-
-background-color: #C3F400;
+flex-wrap: wrap;
+/* flex-direction: column; */
 }
-.section .page8 .contect-us .message{
-
-    background-color: white;
-    min-height: 490px;
-    width: 400px;
+.section .page8 .contact-us .message h2{
+    justify-content: flex-start;
+    font-family: sans-serif;
+    font-weight: 100;
 }
-.section .page8 .contect-us .contact{
+.section .page8  .message{
 
-    background-color:black;
-   min-height: 490px;
+    background-color: black;
+    height: 500px;
     width: 400px;
+    color: white;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    display: block;
+   
+}
+.section .page8 .contact-us .message input,textarea{
+    display: block;
+    color: white;
+        margin: 30px 0px;
+width: 280px;
+border:  0px;
+border-bottom: rgba(255, 255, 255, 0.555) 1px solid;
+padding: 9px;
+background-color: black;
+outline: none;
+}
+.section .page8 .contact-us .contact{
+
+    background-color:white;
+   height: 500px;
+    width: 400px;
+    color: black;
+            /* margin: 40px 0px; */
+padding: 40px ;
+padding-top: 60px;
+
+}
+.section .page8 .btn button {
+    background-color:#C3F400;
+    color: white;
+    width: 190px;
+    height: 60px;
+    margin-top: -10px;
+    border-radius: 10px;
+    border: #C3F400 solid 1px;
+   margin-left: 40px;
+}
+.section .page8 .contact-us .contact h2{
+    justify-content: flex-start;
+    font-family: sans-serif;
+    font-weight: 100;
+    padding-bottom: 20px ;
+}
+.section .page8 .contact-us .contact p{
+   
+    /* text-align: center; */
+    color: gray;
+    padding: 15px 0px;
+}
+
+.section .page8 .contact-us .contact p a{
+    text-decoration: none;
+    color: gray;
+}
+.section .page8 .contact-us .contact p i{
+    color: #000;
+}
+
+
+    .footer .box-container {
+    /* display: grid; */
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(16em, 1fr)); */
+    justify-content: space-evenly;
+    width: 100%;
+    /* background: rgba(0, 0, 0, 0.887); */
+    background: black;
+    padding: 1em 2em;
+}
+
+/* --------------------------FOOTER---------------------------------- */
+.footer {
+    display: block;
+    flex-wrap: wrap;
+}
+.footer .box-container .box{
+    width: 300px;
+    height: 400px;
+    /* background-color: #C3F400; */
+}
+.footer .box-container .box h3 {
+    font-size: 2em;
+    color: white;
+    padding: 1rem 0;
+}
+.footer .box-container .box a {
+    display: block;
+    font-size: 1em;
+    padding: 1rem 0;
+    font-weight: lighter;
+    color: white;
+text-decoration: none;
+
+}
+.footer .box-container .box a:hover {
+    text-decoration: double;
+  background-color: #c3f40099;
+  color: #000;
+} 
+.footer .box-container .box i:hover{
+   color:black;
+}
+.footer .box-container .box a i {
+    padding-right: 0.5rem;
+    color:#C3F400;
+    /* display: block; */
+}
+.section .credit {
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+    border-top: 0.1rem solid rgba(0, 0, 0, 1);
+    background-color: black;
+}
+.section .credit span {
+    color:#C3F400;
 }
 
 
