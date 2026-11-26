@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
 }
 
-/* //////////////// header start ////////////////*/
+/*-------------------------- header start ----------------------*/
 
 header {
 
@@ -19,7 +19,7 @@ header {
     margin: auto;
     /* position: relative; */
     position: fixed;
-     z-index: 9999;
+    z-index: 9999;
 }
 
 header .logo,
@@ -40,9 +40,10 @@ header .logo {
 
 }
 
-.navbar-toggler{
+.navbar-toggler {
     display: none;
 }
+
 header .logo h1 {
 
     font-size: 2.5em;
@@ -63,7 +64,7 @@ header .logo span {
 header .links {
 
     justify-content: flex-end;
-/* width: 100px; */
+    /* width: 100px; */
 }
 
 header .links a {
@@ -80,9 +81,6 @@ header .links a:hover {
     color: #C3F400;
 }
 
-
-
-/* HEADER RESPONSIVE */
 
 .menu {
     position: relative;
@@ -140,7 +138,7 @@ header .links a:hover {
     }
 }
 
-/* //////////////// header end ////////////////*/
+/* ------------------------------------- header end -----------------------------*/
 
 /* ---------------------------------page1-start-------------------------------------------------------- */
 
@@ -148,7 +146,7 @@ header .links a:hover {
     max-width: 100%;
     height: 100%;
     /* flex-direction: column; */
-/* display: flex; */
+    /* display: flex; */
 }
 
 
@@ -172,14 +170,14 @@ header .links a:hover {
     height: 100%;
     justify-content: flex-start;
     margin-left: 60px;
-        margin-top: 80px;
+    margin-top: 80px;
 
 }
 
 .section .page1 .content h1 {
     font-family: "Bangers", system-ui;
     font-weight: 300;
-/* margin-left: -30px; */
+    /* margin-left: -30px; */
     /* text-align: center; */
     font-size: 5em;
     color: white;
@@ -240,29 +238,17 @@ header .links a:hover {
 .section .page1 .image {
 
     width: 35%;
-    min-height:518px ;
-    /* flex-wrap: wrap; */
-    /* background-color: aqua; */
-    /* position: fixed; */
-    /* display: flex;
-  flex-direction: column; */
-      /* position: fixed; */
-display: flex;
-align-items: center;
+    min-height: 518px;
+   
+    display: flex;
+    align-items: center;
     animation: move 2s ease-in-out infinite;
 }
 
-.section .page1 img{
+.section .page1 img {
     height: 400px;
-    width:400px ;
-    /* margin-top: -190px; */
+    width: 400px;
 }
-
-/* .section .page1 .image {
-
-    animation: move 2s ease-in-out infinite;
-
-} */
 
 .contentHead {
     justify-content: center;
@@ -296,21 +282,25 @@ align-items: center;
 
 
 /* -------------------------- PAGE 1  RESPONSIVE --------------------- */
+
 @media (max-width: 1255px) {
-.section .page1 .content {
+    .section .page1 .content {
         width: 60%;
         margin-left: 0px;
         margin-top: 80px;
     }
- .section .page1 .image {
+
+    .section .page1 .image {
         width: 30%;
         min-height: auto;
     }
-.section .page1 img {
-        width:300px ;
+
+    .section .page1 img {
+        width: 300px;
         height: auto;
     }
 }
+
 @media (max-width: 1024px) {
 
     .section .page1 .content {
@@ -406,7 +396,7 @@ align-items: center;
         width: 80%;
         max-width: 350px;
         height: auto;
-                margin-top: 30px;
+        margin-top: 30px;
 
     }
 
@@ -497,7 +487,7 @@ align-items: center;
 }
 
 
-/* ============== PAGE 2 TABLET RESPONSIVE ============== */
+/* -------------------------- PAGE 2  RESPONSIVE --------------------- */
 
 @media (max-width: 1024px) {
 
@@ -529,7 +519,6 @@ align-items: center;
 
 }
 
-/* ============== PAGE 2 MOBILE RESPONSIVE ============== */
 
 @media (max-width: 830px) {
 
@@ -571,7 +560,6 @@ align-items: center;
 
 }
 
-/* ============== PAGE 2 SMALL MOBILE ============== */
 
 @media (max-width: 480px) {
 
@@ -640,7 +628,7 @@ align-items: center;
     letter-spacing: 8px;
 }
 
-.section .page3 .content h1 span{
+.section .page3 .content h1 span {
     color: #C3F400;
 }
 
@@ -675,7 +663,7 @@ align-items: center;
     box-shadow: 30px 3;
 }
 
-/* ============== PAGE 3 TABLET RESPONSIVE ============== */
+/* -------------------------- PAGE 3  RESPONSIVE --------------------- */
 
 @media (max-width: 1024px) {
 
@@ -713,7 +701,6 @@ align-items: center;
 
 }
 
-/* ============== PAGE 3 MOBILE RESPONSIVE ============== */
 
 @media (max-width: 830px) {
 
@@ -772,7 +759,6 @@ align-items: center;
 
 }
 
-/* ============== PAGE 3 SMALL MOBILE ============== */
 
 @media (max-width: 480px) {
 
@@ -835,8 +821,9 @@ align-items: center;
     text-align: center;
 
 }
-.section .page4 .numbers i{
-font-size: 3em;
+
+.section .page4 .numbers i {
+    font-size: 3em;
 }
 
 
@@ -862,17 +849,19 @@ h2 {
     letter-spacing: 4px;
 }
 
+/* -------------------------- PAGE 4  RESPONSIVE --------------------- */
 
-@media(max-width:1183px){
+
+@media(max-width:1183px) {
     .section .page4 .numbers {
-   padding: 90px 0px;
+        padding: 90px 0px;
 
+    }
 }
-}
-/* ------------------------------------ */
+
 @media (max-width: 1285px) {
 
-    
+
     .section .contentHead .p {
         width: 1000px;
     }
@@ -883,7 +872,7 @@ h2 {
 
 @media (max-width: 1024px) {
 
-    
+
     .section .contentHead .p {
         width: 800px;
         padding: 0px;
@@ -891,21 +880,23 @@ h2 {
 
 
 }
+
 @media (max-width: 830px) {
 
-   
+
 
     .section .contentHead .p {
         width: 500px;
         padding: 0px;
 
     }
-    
+
 
 }
+
 @media (max-width: 530px) {
 
-   
+
 
     .section .contentHead .p {
         width: 300px;
@@ -913,7 +904,7 @@ h2 {
 
     }
 
-    
+
 
 }
 
@@ -992,7 +983,7 @@ h2 {
 
 }
 
-/* ============== PAGE 5 TABLET RESPONSIVE ============== */
+/* -------------------------- PAGE 5  RESPONSIVE --------------------- */
 
 @media (max-width: 1024px) {
 
@@ -1019,7 +1010,6 @@ h2 {
 
 }
 
-/* ============== PAGE 5 MOBILE RESPONSIVE ============== */
 
 @media (max-width: 830px) {
 
@@ -1074,7 +1064,6 @@ h2 {
 
 }
 
-/* ============== PAGE 5 SMALL MOBILE ============== */
 
 @media (max-width: 480px) {
 
@@ -1134,9 +1123,10 @@ h2 {
     background-image: url(./assets/images/backgroung\ orange.jpg);
 }
 
-.section .page6 .content{
-text-align: center;
+.section .page6 .content {
+    text-align: center;
 }
+
 /* .section .page6 h3 {
     font-size: 1.5em;
     padding: 20px;
@@ -1164,11 +1154,13 @@ text-align: center;
     margin: auto;
     color: white;
 }
-.section .page6 .btn{
-    display: flex; 
+
+.section .page6 .btn {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .section .page6 .btn .btn2 {
     background-color: transparent;
     color: #C3F400;
@@ -1194,7 +1186,7 @@ text-align: center;
     box-shadow: 30px 3;
 }
 
-/* ============== PAGE 6 TABLET RESPONSIVE ============== */
+/* -------------------------- PAGE 6  RESPONSIVE --------------------- */
 
 @media (max-width: 1024px) {
 
@@ -1215,7 +1207,6 @@ text-align: center;
 
 }
 
-/* ============== PAGE 6 MOBILE RESPONSIVE ============== */
 
 @media (max-width: 830px) {
 
@@ -1259,7 +1250,6 @@ text-align: center;
 
 }
 
-/* ============== PAGE 6 SMALL MOBILE ============== */
 
 @media (max-width: 480px) {
 
@@ -1291,8 +1281,8 @@ text-align: center;
 /* ---------------------------------page7-start-------------------------------------------------------- */
 
 
-.section .page7{
-width: 100%;
+.section .page7 {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1300,6 +1290,7 @@ width: 100%;
     min-height: 60vh;
     padding: 5em 2em;
 }
+
 .section .page7 .octagonwrap {
     width: 200px;
     height: 200px;
@@ -1308,7 +1299,8 @@ width: 100%;
     overflow: hidden;
     /* margin: 20px; */
 }
-.section .page7  .octagon{
+
+.section .page7 .octagon {
     position: absolute;
     top: 0;
     right: 0;
@@ -1320,19 +1312,21 @@ width: 100%;
     border: 5px solid black;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
     /* transition: 2s ease-in-out; */
-       transition: transform 0.5s ;
+    transition: transform 0.5s;
 }
-.section .page7 .gallery-img{
+
+.section .page7 .gallery-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     /* transform: rotate(-45deg); */
 }
-.section .page7 .octagon:hover{
-   overflow:visible;
-      transform: translateY(-20px);
-   /* transition: transform 0.5s ease-in-out; */
-       /* transform: rotate(none); */
+
+.section .page7 .octagon:hover {
+    overflow: visible;
+    transform: translateY(-20px);
+    /* transition: transform 0.5s ease-in-out; */
+    /* transform: rotate(none); */
 
 }
 
@@ -1341,10 +1335,10 @@ width: 100%;
 /* ---------------------------------page8-start-------------------------------------------------------- */
 
 
-.section .page8{
-  min-height: 100vh;
+.section .page8 {
+    min-height: 100vh;
     width: 100%;
-    background-image:   url(./assets/images/contact1.jpg);
+    background-image: url(./assets/images/contact1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1354,18 +1348,21 @@ width: 100%;
     align-items: center;
     margin: auto;
 
-} 
-.section .page8 .contact-us{
-display: flex;
-flex-wrap: wrap;
-/* flex-direction: column; */
 }
-.section .page8 .contact-us .message h2{
+
+.section .page8 .contact-us {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+
+.section .page8 .contact-us .message h2 {
     justify-content: flex-start;
     font-family: sans-serif;
     font-weight: 100;
 }
-.section .page8  .message{
+
+.section .page8 .message {
 
     background-color: black;
     height: 500px;
@@ -1376,62 +1373,69 @@ flex-wrap: wrap;
     align-items: center;
     padding: 60px;
     display: block;
-   
+
 }
-.section .page8 .contact-us .message input,textarea{
+
+.section .page8 .contact-us .message input,
+textarea {
     display: block;
     color: white;
-        margin: 30px 0px;
-width: 280px;
-border:  0px;
-border-bottom: rgba(255, 255, 255, 0.555) 1px solid;
-padding: 9px;
-background-color: black;
-outline: none;
+    margin: 30px 0px;
+    width: 280px;
+    border: 0px;
+    border-bottom: rgba(255, 255, 255, 0.555) 1px solid;
+    padding: 9px;
+    background-color: black;
+    outline: none;
 }
-.section .page8 .contact-us .contact{
 
-    background-color:white;
+.section .page8 .contact-us .contact {
+
+    background-color: white;
     height: 500px;
     color: black;
     /* margin: 40px 0px; */
     padding: 40px;
     padding-top: 60px;
-width: 400px;
+    width: 400px;
 
 }
+
 .section .page8 .btn button {
-    background-color:#C3F400;
+    background-color: #C3F400;
     color: white;
     width: 190px;
     height: 60px;
     margin-top: -10px;
     border-radius: 10px;
     border: #C3F400 solid 1px;
-   margin-left: 40px;
+    margin-left: 40px;
 }
-.section .page8 .contact-us .contact h2{
+
+.section .page8 .contact-us .contact h2 {
     justify-content: flex-start;
     font-family: sans-serif;
     font-weight: 100;
-    padding-bottom: 20px ;
+    padding-bottom: 20px;
 }
-.section .page8 .contact-us .contact p{
-   
+
+.section .page8 .contact-us .contact p {
+
     /* text-align: center; */
     color: gray;
     padding: 15px 0px;
 }
 
-.section .page8 .contact-us .contact p a{
+.section .page8 .contact-us .contact p a {
     text-decoration: none;
     color: gray;
 }
-.section .page8 .contact-us .contact p i{
+
+.section .page8 .contact-us .contact p i {
     color: #000;
 }
 
-/* ============== PAGE 8 TABLET RESPONSIVE ============== */
+/* -------------------------- PAGE 8  RESPONSIVE --------------------- */
 
 @media (max-width: 1024px) {
 
@@ -1446,7 +1450,7 @@ width: 400px;
         align-items: stretch;
     }
 
-  .contact-us .page8 .message,
+    .contact-us .page8 .message,
     .contact-us .page8 .contact {
         width: 45%;
         height: 500px;
@@ -1460,18 +1464,17 @@ width: 400px;
         padding: 40px 25px;
     }
 
-     .page8 .contact-us .message input,
+    .page8 .contact-us .message input,
     .page8 .contact-us .message textarea {
         width: 100%;
     }
 
-  .page8 .btn button {
+    .page8 .btn button {
         margin-left: 0;
     }
 
 }
 
-/* ============== PAGE 8 MOBILE RESPONSIVE ============== */
 
 @media (max-width: 830px) {
 
@@ -1504,7 +1507,7 @@ width: 400px;
     }
 
     .page8 .contact-us .message input,
-     .page8 .contact-us .message textarea {
+    .page8 .contact-us .message textarea {
         width: 100%;
         margin: 25px 0;
     }
@@ -1513,11 +1516,11 @@ width: 400px;
         font-size: 1.5em;
     }
 
- .page8 .contact-us .contact h2 {
+    .page8 .contact-us .contact h2 {
         font-size: 1.5em;
     }
 
-   .page8 .contact-us .contact p {
+    .page8 .contact-us .contact p {
         font-size: 14px;
         line-height: 24px;
     }
@@ -1534,7 +1537,6 @@ width: 400px;
 
 }
 
-/* ============== PAGE 8 SMALL MOBILE ============== */
 
 @media (max-width: 480px) {
 
@@ -1543,31 +1545,33 @@ width: 400px;
         width: 100%;
         background-image: none;
     }
-   .section .page8 .contact-us{
+
+    .section .page8 .contact-us {
         width: 100%;
-    } 
-    .page8 .contact-us  .message {
+    }
+
+    .page8 .contact-us .message {
         padding: 20px 20px;
-        width: 300px ;
+        width: 300px;
 
     }
 
-     .page8 .contact-us  .contact {
-       border: #00000095 1px solid;
-       margin-top: 20px;
-       border-radius: 5px;
-       width: 300px !important;
-    
+    .page8 .contact-us .contact {
+        border: #00000095 1px solid;
+        margin-top: 20px;
+        border-radius: 5px;
+        width: 300px !important;
+
     }
 
     .page8 .contact-us .message h2,
-     .page8 .contact-us .contact h2 {
+    .page8 .contact-us .contact h2 {
         font-size: 1.3em;
 
     }
 
-     .page8 .contact-us .message input,
-     .page8 .contact-us .message textarea {
+    .page8 .contact-us .message input,
+    .page8 .contact-us .message textarea {
         max-width: 100%;
         font-size: 13px;
         padding: 9px 5px;
@@ -1580,7 +1584,7 @@ width: 400px;
         overflow-wrap: anywhere;
     }
 
-     .page8 .btn button {
+    .page8 .btn button {
         max-width: 150px;
         height: 45px;
         font-size: 13px;
@@ -1590,7 +1594,7 @@ width: 400px;
 
 /* ------------------------------------FOOTER---------------------------------- */
 
-    .footer .box-container {
+.footer .box-container {
     /* display: grid; */
     display: flex;
     /* grid-template-columns: repeat(auto-fit, minmax(16em, 1fr)); */
@@ -1607,38 +1611,45 @@ width: 400px;
     display: block;
     flex-wrap: wrap;
 }
-.footer .box-container .box{
+
+.footer .box-container .box {
     width: 300px;
     height: 400px;
     /* background-color: #C3F400; */
 }
+
 .footer .box-container .box h3 {
     font-size: 2em;
     color: white;
     padding: 1rem 0;
 }
+
 .footer .box-container .box a {
     display: block;
     font-size: 1em;
     padding: 1rem 0;
     font-weight: lighter;
     color: white;
-text-decoration: none;
+    text-decoration: none;
 
 }
+
 .footer .box-container .box a:hover {
     text-decoration: double;
-  background-color: #c3f40099;
-  color: #000;
-} 
-.footer .box-container .box i:hover{
-   color:black;
+    background-color: #c3f40099;
+    color: #000;
 }
+
+.footer .box-container .box i:hover {
+    color: black;
+}
+
 .footer .box-container .box a i {
     padding-right: 0.5rem;
-    color:#C3F400;
+    color: #C3F400;
     /* display: block; */
 }
+
 .section .credit {
     width: 100%;
     padding: 1rem;
@@ -1650,11 +1661,12 @@ text-decoration: none;
     border-top: 0.1rem solid rgba(0, 0, 0, 1);
     background-color: black;
 }
+
 .section .credit span {
-    color:#C3F400;
+    color: #C3F400;
 }
 
-/* ============== FOOTER TABLET RESPONSIVE ============== */
+/* --------------------------FOOTER RESPONSIVE --------------------- */
 
 @media (max-width: 1024px) {
 
@@ -1673,7 +1685,6 @@ text-decoration: none;
 
 }
 
-/* ============== FOOTER MOBILE RESPONSIVE ============== */
 
 @media (max-width: 830px) {
 
@@ -1705,7 +1716,6 @@ text-decoration: none;
 
 }
 
-/* ============== FOOTER SMALL MOBILE ============== */
 
 @media (max-width: 480px) {
 
@@ -1744,15 +1754,7 @@ text-decoration: none;
 
 }
 
-
-
-
-
-
-
-
-
-
+/* ------------------------------------- keyframes  ----------------------------------------- */
 
 @keyframes move {
 
@@ -1770,4 +1772,36 @@ text-decoration: none;
     }
 
 
+}
+
+/* ---------------------------------- back-to-top------------------------------------- */
+.back-to-top {
+    position: fixed;
+
+    right: 30px;
+    bottom: 30px;
+    width: 45px;
+    height: 45px;
+
+    background-color: #C3F400;
+    color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    border-radius: 50%;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+    z-index: 999;
+
+    transition: all 0.4s ease;
+
+    animation: topButton 1s ease infinite alternate;
 }
